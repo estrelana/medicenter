@@ -1,0 +1,142 @@
+:root {
+  --colorFont: #727272;
+  --colorPrin: #39aae1;
+  --color1: #F5F5F5;
+  --color2: #0079c7;
+  --color3: #2b4c99;
+
+
+  --fonteInter: 'FontInter';
+  --fonteShalma: 'FontShalma';
+}
+
+@font-face {
+  font-family: FontInter;
+  src: url('./imagens/static/Inter-Regular.ttf') format('opentype');
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tamanhoPadrao {
+  width: 1090px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.s1 {
+  width: 1090px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  /*possibilita fazer alterações, como tamanho*/
+  padding: 15px 13px;
+  margin: 2px;
+  text-transform: uppercase;
+  color: var(--colorFont);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul .ativo a,
+li a:hover {
+  background-color: var(--colorPrin);
+  color: var(--color1);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-image: url('../imagens/img1.jpg');
+  background-position: center;
+  /*posiciona a imagem no centro*/
+  background-size: cover;
+  /*deixa a imagem responsiva*/
+  height: 670px;
+}
+
+.coluna {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bannerText {
+  flex: 1;
+  color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerText h1 {
+  font-size: 70px;
+  text-shadow: 0 1px black;
+  /*sombra nas palavras */
+  max-width: 350px;
+  /*possibilita que os texto fiquem em mais de 1 linha*/
+  /*no entanto, em telas menores esse tamanho vai ser menor*/
+}
+
+.bannerText h2 {
+  margin-top: 25px;
+  font-size: 19px;
+  max-width: 350px;
+  /*possibilita que os texto fiquem em mais de 1 linha*/
+}
+
+.bannerOpcoes {
+  height: 210px;
+  /*não precisa de flex:1 pois o esse tem tamanho defido e a outra tag ocupa o espaçõ restante*/
+  display: flex;
+}
+
+.opcao1,
+.opcao2,
+.opcao3 {
+  flex: 1;
+  color: var(--color1);
+  /*todos quadrados do mesmo tanhanho*/
+  padding: 20px;
+}
+
+
+.banner p{
+  margin-top: 15px;
+}
+.opcao1 {
+  background-color: var(--colorPrin);
+}
+
+.opcao2 {
+  background-color: var(--color2);
+}
+
+.opcao3 {
+  background-color: var(--color3);
+}
+
+.bannerOpcoes a{
+  display: inline-block; /*para ficar do tamanho do texto*/
+  border: 1px solid #F5F5F5;
+  padding: 5px 12px;
+  color: var(--color1);
+  margin-top: 20px;
+}
