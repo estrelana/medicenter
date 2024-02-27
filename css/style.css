@@ -360,6 +360,9 @@ font-size: 16px;
 .f1 p {
 margin-left: 7px;
 }
+ .menuMobile{
+  display: none;
+ }
 
 /**Responsividade*/
 
@@ -422,6 +425,30 @@ margin-left: 7px;
 
   .s2{
     margin-top: 50px;
+  }
+
+  nav ul{ 
+    flex-direction: column;
+  }
+
+  .menuMobile{
+
+  }
+
+  ul li{
+    display: none;
+  }
+
+  header{
+    height: auto;
+    padding: 20px;
+  }
+  header img{
+    padding-left: 10%;
+  }
+
+  .menuMobile{
+    display: block;
   }
 }
 
