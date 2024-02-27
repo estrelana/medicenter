@@ -19,7 +19,7 @@
 }
 
 .tamanhoPadrao {
-  width: 1090px;
+  width: 72%;
 }
 
 header {
@@ -151,7 +151,7 @@ li a:hover {
 
 .caixa {
   display: flex;
-  width: 1090px;
+  width: 72%;
   justify-content: space-between;
 }
 
@@ -223,7 +223,7 @@ article {
 }
 
 .quad {
-  min-width: 179px;
+  min-width: 49%;
   background-color: var(--color2);
   height: 179px;
   border-radius: 2px;
@@ -359,4 +359,79 @@ font-size: 16px;
 }
 .f1 p {
 margin-left: 7px;
+}
+
+/**Responsividade*/
+
+@media (max-width: 1137px) {
+  .bannerOpcoes{
+    height: auto;
+    flex-direction: column;
+  }
+
+  .banner{
+    display: block;
+    height: 880px;
+  }
+
+  .tamanhoPadrao{
+    width: 100%;
+  }
+  .bannerText h1 {
+    font-size: 50px;
+    margin-top: 150px;
+    padding: 0 0 0 2%;
+  }
+
+  .bannerText h2{
+    font-size: 17px;
+    margin-bottom: 51px;
+    padding: 0 0 0 2%;
+  }
+
+  .caixa{
+  flex-direction: column;
+  }
+}
+
+@media (max-width: 958px) {
+  .bannerOpcoes{
+    height: auto;
+    flex-direction: column;
+  }
+
+  .banner{
+    display: block;
+  }
+
+  .tamanhoPadrao{
+    width: 100%;
+  }
+
+  .bannerText h1 {
+    font-size: 50px;
+    margin-top: 150px;
+    padding: 0 0 0 2%;
+  }
+
+  .bannerText h2{
+    font-size: 17px;
+    margin-bottom: 51px;
+    padding: 0 0 0 2%;
+  }
+
+  .s2{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 691px) {
+  .footerMenu{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerFinal{
+    padding: 0 0 0 14%;
+  }
 }
