@@ -499,8 +499,14 @@ footer {
   }
 }
 
-@media (max-width: 470px) {
+@media (min-width: 324px) and (max-width: 470px) {
   .s2Text h1 {
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 323px) {
+  .s2Text h1 {
+    margin-top: 90px;
   }
 }
