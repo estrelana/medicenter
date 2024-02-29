@@ -501,12 +501,12 @@ footer {
 
 @media (min-width: 324px) and (max-width: 470px) {
   .s2Text h1 {
-    margin-top: 60px;
+    margin-top: 95px;
   }
 }
 
 @media (max-width: 323px) {
   .s2Text h1 {
-    margin-top: 90px;
+    margin-top: 100px;
   }
 }
