@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector(".s1 ul").style.display == "flex") {
+                    document.querySelector(".s1 ul").style.display = "none";
+                } else {
+                    document.querySelector(".s1 ul").style.display = "flex";
+                }
+            });
+        };
+    </script>
     <title>Medicenter</title>
 </head>
 
@@ -75,7 +84,7 @@
             <section class="blog">
                 <a href="#">
                     <div class="s2Text">
-                        <h1>Latest News</h1>
+                        <h1 class="prin">Latest News</h1>
                         <div class="bar"></div>
                         <div class="noticies flex">
                             <article class="article1">
@@ -179,12 +188,13 @@
                 </div>
             </div>
 
-            <div class="footerFinal ">
+            <div class="footerFinal">
                 <div class="footerFinal1">
                     <h1>Medicenter Clinic</h1>
                     <div class="bar"></div>
                     <p class="colorGray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p class="colorGray">Medicenter Center <br> 33 Farlane Street<br>Keilor East <br>VIC 3003, Australia</p>
+                    <p class="colorGray">Medicenter Center <br> 33 Farlane Street<br>Keilor East <br>VIC 3003, Australia
+                    </p>
                     <i class="bi bi-facebook icones"></i>
                     <i class="bi bi-twitter icones"></i>
                     <i class="bi bi-instagram icones"></i>
@@ -222,23 +232,26 @@
                     <div>
                         <div class="f1">
                             <i class="bi bi-arrow-right-circle-fill"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet distinctio quos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Amet distinctio quos.</p>
                         </div>
                         <pre class="temp">6 years ago</pre>
                     </div>
                     <div>
                         <div class="f1">
                             <i class="bi bi-arrow-right-circle-fill"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet distinctio quos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Amet distinctio quos.</p>
                         </div>
                         <pre class="temp">6 years ago</pre>
                     </div>
                     <div>
                         <div class="f1">
                             <i class="bi bi-arrow-right-circle-fill"></i>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet distinctio quos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Amet distinctio quos.</p>
                         </div>
-                        <pre class="temp">6 years ago</pre>
+                        <pre class="temp" id="marginBottom">6 years ago</pre>
                     </div>
                 </div>
             </div>
